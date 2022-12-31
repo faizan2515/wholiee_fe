@@ -15,22 +15,16 @@ function Cart() {
       </div>
       <div className="offcanvas-body p-4" data-simplebar>
         <div className="d-flex align-items-center mb-3">
-          <a className="d-block flex-shrink-0" href="shop-single.html">
-            <img
-              className="rounded"
-              src="img/demo/shop-homepage/thumbnails/05.jpg"
-              alt="Product"
-              width="60"
-            />
-          </a>
+          <img
+            className="rounded"
+            src="img/demo/shop-homepage/thumbnails/05.jpg"
+            alt="Product"
+            width="60"
+          />
           <div className="w-100 ps-2 ms-1">
             <div className="d-flex align-items-center justify-content-between">
               <div className="me-3">
-                <h4 className="nav-heading fs-md mb-1">
-                  <a className="fw-medium" href="shop-single.html">
-                    Smart Watch Series 5
-                  </a>
-                </h4>
+                <h4 className="nav-heading fs-md mb-1">Smart Watch Series 5</h4>
                 <div className="d-flex align-items-center fs-sm">
                   <span className="me-2">$364.99</span>
                   <span className="me-2">x</span>
@@ -44,34 +38,29 @@ function Cart() {
                 </div>
               </div>
               <div className="ps-3 border-start">
-                <a
-                  className="d-block text-danger text-decoration-none fs-xl"
-                  href="#"
+                <button
+                  className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
                   data-bs-toggle="tooltip"
                   title="Remove"
                 >
                   <i className="ai-x-circle"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="d-flex align-items-center mb-3">
-          <a className="d-block flex-shrink-0" href="shop-single.html">
-            <img
-              className="rounded"
-              src="img/demo/shop-homepage/thumbnails/02.jpg"
-              alt="Product"
-              width="60"
-            />
-          </a>
+          <img
+            className="rounded"
+            src="img/demo/shop-homepage/thumbnails/02.jpg"
+            alt="Product"
+            width="60"
+          />
           <div className="w-100 ps-2 ms-1">
             <div className="d-flex align-items-center justify-content-between">
               <div className="me-3">
                 <h4 className="nav-heading fs-md mb-1">
-                  <a className="fw-medium" href="shop-single.html">
-                    Running Sneakers, Collection
-                  </a>
+                  Running Sneakers, Collection
                 </h4>
                 <div className="d-flex align-items-center fs-sm">
                   <span className="me-2">$145.00</span>
@@ -86,34 +75,29 @@ function Cart() {
                 </div>
               </div>
               <div className="ps-3 border-start">
-                <a
-                  className="d-block text-danger text-decoration-none fs-xl"
-                  href="#"
+                <button
+                  className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
                   data-bs-toggle="tooltip"
                   title="Remove"
                 >
                   <i className="ai-x-circle"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="d-flex align-items-center mb-3">
-          <a className="d-block flex-shrink-0" href="shop-single.html">
-            <img
-              className="rounded"
-              src="img/demo/shop-homepage/thumbnails/06.jpg"
-              alt="Product"
-              width="60"
-            />
-          </a>
+          <img
+            className="rounded"
+            src="img/demo/shop-homepage/thumbnails/06.jpg"
+            alt="Product"
+            width="60"
+          />
           <div className="w-100 ps-2 ms-1">
             <div className="d-flex align-items-center justify-content-between">
               <div className="me-3">
                 <h4 className="nav-heading fs-md mb-1">
-                  <a className="fw-medium" href="shop-single.html">
-                    Wireless Bluetooth Headset
-                  </a>
+                  Wireless Bluetooth Headset
                 </h4>
                 <div className="d-flex align-items-center fs-sm">
                   <span className="me-2">$258.00</span>
@@ -128,14 +112,13 @@ function Cart() {
                 </div>
               </div>
               <div className="ps-3 border-start">
-                <a
-                  className="d-block text-danger text-decoration-none fs-xl"
-                  href="#"
+                <button
+                  className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
                   data-bs-toggle="tooltip"
                   title="Remove"
                 >
                   <i className="ai-x-circle"></i>
-                </a>
+                </button>
               </div>
             </div>
           </div>

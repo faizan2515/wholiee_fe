@@ -875,10 +875,10 @@ function Categories() {
                         <span className="btn-tooltip">Wishlist</span>
                       </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-details">
+                      <button className="btn-details border-0 bg-transparent">
                         <i className="ai-arrow-right"></i>
                         <span className="btn-tooltip">Details</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -983,15 +983,15 @@ function Categories() {
               <nav className="mb-4" aria-label="Page navigation">
                 <ul className="pagination justify-content-center">
                   <li className="page-item">
-                    <a className="page-link" aria-label="Previous">
+                    <buttton className="page-link" aria-label="Previous">
                       <i className="ai-chevron-left"></i>
-                    </a>
+                    </buttton>
                   </li>
                   <li className="page-item d-sm-none">
                     <span className="page-link page-link-static">2 / 10</span>
                   </li>
                   <li className="page-item d-none d-sm-block">
-                    <a className="page-link">1</a>
+                    <buttton className="page-link">1</buttton>
                   </li>
                   <li
                     className="page-item active d-none d-sm-block"
@@ -1002,19 +1002,19 @@ function Categories() {
                     </span>
                   </li>
                   <li className="page-item d-none d-sm-block">
-                    <a className="page-link">3</a>
+                    <buttton className="page-link">3</buttton>
                   </li>
                   <li className="page-item d-none d-sm-block">
-                    <a className="page-link">4</a>
+                    <buttton className="page-link">4</buttton>
                   </li>
                   <li className="page-item d-none d-sm-block">...</li>
                   <li className="page-item d-none d-sm-block">
-                    <a className="page-link">10</a>
+                    <buttton className="page-link">10</buttton>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" aria-label="Next">
+                    <buttton className="page-link" aria-label="Next">
                       <i className="ai-chevron-right"></i>
-                    </a>
+                    </buttton>
                   </li>
                 </ul>
               </nav>
