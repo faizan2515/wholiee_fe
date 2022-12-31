@@ -15,10 +15,10 @@ function AboutUs() {
                 enim ad minim veniam, quis nostrud.
               </p>
             </div>
-            <a
+            {/* <a
               className="btn-video btn-video-primary btn-video-sm me-3"
               href="https://www.youtube.com/watch?v=hTu0a4o97dU"
-            ></a>
+            ></a> */}
             <span className="fs-sm text-muted">Get to know us better</span>
           </div>
           <div className="col-xl-6 col-lg-7 offset-xl-1 position-relative">
@@ -86,7 +86,7 @@ function AboutUs() {
           </div>
         </div>
       </section>
-      <section className="container mb-5 pb-3 pb-lg-0 mb-lg-7">
+      {/* <section className="container mb-5 pb-3 pb-lg-0 mb-lg-7">
         <h2 className="pb-4 mb-4 text-center">People behind our success</h2>
         <div className="row mb-3">
           <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
@@ -265,7 +265,7 @@ function AboutUs() {
             </button>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="container pb-5 pb-lg-6">
         <h2 className="mb-5 text-center">We work with world’s top companies</h2>
         <div className="row">
