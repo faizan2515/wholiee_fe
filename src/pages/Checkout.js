@@ -6,19 +6,6 @@ function Checkout() {
       <div className="container">
         <div className="row">
           <div className="col-lg-8 content py-4">
-            <nav aria-label="breadcrumb">
-              <ol className="py-1 my-2 breadcrumb">
-                <li className="breadcrumb-item">
-                  <a href="index.html">Home</a>
-                </li>
-                <li className="breadcrumb-item">
-                  <a href="shop-ls.html">Shop</a>
-                </li>
-                <li className="breadcrumb-item active" aria-current="page">
-                  Checkout
-                </li>
-              </ol>
-            </nav>
             <h1 className="mb-3 pb-4">Checkout</h1>
             <h2 className="h3 pb-3">Billing details</h2>
             <div className="row mb-4">
@@ -153,21 +140,17 @@ function Checkout() {
             <div className="ps-lg-4 mb-3 pb-5">
               <h2 className="h4 pb-3">Your cart</h2>
               <div className="d-flex align-items-center mb-4">
-                <a className="d-block flex-shrink-0" href="shop-single.html">
-                  <img
-                    className="rounded"
-                    src="img/demo/shop-homepage/thumbnails/05.jpg"
-                    alt="Product"
-                    width="60"
-                  />
-                </a>
+                <img
+                  className="rounded"
+                  src="img/demo/shop-homepage/thumbnails/05.jpg"
+                  alt="Product"
+                  width="60"
+                />
                 <div className="w-100 ps-2 ms-1">
                   <div className="d-flex align-items-center justify-content-between">
                     <div className="me-3">
                       <h4 className="nav-heading fs-md mb-1">
-                        <a className="fw-medium" href="shop-single.html">
-                          Smart Watch Series 5
-                        </a>
+                        Smart Watch Series 5
                       </h4>
                       <div className="d-flex align-items-center fs-sm">
                         <span className="me-2">$364.99</span>
@@ -182,34 +165,29 @@ function Checkout() {
                       </div>
                     </div>
                     <div className="ps-3 border-start">
-                      <a
-                        className="d-block text-danger text-decoration-none fs-xl"
-                        href="#"
+                      <button
+                        className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
                         data-bs-toggle="tooltip"
                         title="Remove"
                       >
                         <i className="ai-x-circle"></i>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="d-flex align-items-center mb-4">
-                <a className="d-block flex-shrink-0" href="shop-single.html">
-                  <img
-                    className="rounded"
-                    src="img/demo/shop-homepage/thumbnails/02.jpg"
-                    alt="Product"
-                    width="60"
-                  />
-                </a>
+                <img
+                  className="rounded"
+                  src="img/demo/shop-homepage/thumbnails/02.jpg"
+                  alt="Product"
+                  width="60"
+                />
                 <div className="w-100 ps-2 ms-1">
                   <div className="d-flex align-items-center justify-content-between">
                     <div className="me-3">
                       <h4 className="nav-heading fs-md mb-1">
-                        <a className="fw-medium" href="shop-single.html">
-                          Running Sneakers, Collection
-                        </a>
+                        Running Sneakers, Collection
                       </h4>
                       <div className="d-flex align-items-center fs-sm">
                         <span className="me-2">$145.00</span>
@@ -224,34 +202,29 @@ function Checkout() {
                       </div>
                     </div>
                     <div className="ps-3 border-start">
-                      <a
-                        className="d-block text-danger text-decoration-none fs-xl"
-                        href="#"
+                      <button
+                        className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
                         data-bs-toggle="tooltip"
                         title="Remove"
                       >
                         <i className="ai-x-circle"></i>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="d-flex align-items-center mb-4">
-                <a className="d-block flex-shrink-0" href="shop-single.html">
-                  <img
-                    className="rounded"
-                    src="img/demo/shop-homepage/thumbnails/06.jpg"
-                    alt="Product"
-                    width="60"
-                  />
-                </a>
+                <img
+                  className="rounded"
+                  src="img/demo/shop-homepage/thumbnails/06.jpg"
+                  alt="Product"
+                  width="60"
+                />
                 <div className="w-100 ps-2 ms-1">
                   <div className="d-flex align-items-center justify-content-between">
                     <div className="me-3">
                       <h4 className="nav-heading fs-md mb-1">
-                        <a className="fw-medium" href="shop-single.html">
-                          Wireless Bluetooth Headset
-                        </a>
+                        Wireless Bluetooth Headset
                       </h4>
                       <div className="d-flex align-items-center fs-sm">
                         <span className="me-2">$258.00</span>
@@ -266,14 +239,13 @@ function Checkout() {
                       </div>
                     </div>
                     <div className="ps-3 border-start">
-                      <a
-                        className="d-block text-danger text-decoration-none fs-xl"
-                        href="#"
+                      <button
+                        className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
                         data-bs-toggle="tooltip"
                         title="Remove"
                       >
                         <i className="ai-x-circle"></i>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>

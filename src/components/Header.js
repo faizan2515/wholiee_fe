@@ -41,15 +41,14 @@ function Header() {
 
             <div className="d-flex align-items-center order-lg-3 ms-lg-auto">
               <div className="navbar-tool me-2">
-                <a
-                  className="navbar-tool-icon-box"
-                  href="#"
+                <button
+                  className="navbar-tool-icon-box border-0 bg-transparent"
                   data-bs-toggle="offcanvas"
                   data-bs-target="#shoppingCart"
                 >
                   <i className="ai-shopping-cart"></i>
                   <span className="navbar-tool-badge">3</span>
-                </a>
+                </button>
               </div>
             </div>
             <div

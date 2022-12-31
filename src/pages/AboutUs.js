@@ -34,45 +34,30 @@ function AboutUs() {
               ></div>
               <div className="row g-0 mx-n2 pt-lg-4">
                 <div className="col-sm-4 px-2 mb-3">
-                  <a
-                    className="card h-100 card-body py-5 justify-content-center border-0 shadow-lg text-center"
-                    href="#"
-                  >
+                  <p className="card h-100 card-body py-5 justify-content-center border-0 shadow-lg text-center">
                     <i className="ai-zap text-primary h1 mb-3"></i>
                     <h3 className="h5 mb-0">Boost</h3>
-                  </a>
+                  </p>
                 </div>
                 <div className="col-sm-4 px-2 mb-3">
-                  <a
-                    className="card card-body py-5 border-0 shadow-lg text-center mb-3"
-                    href="#"
-                  >
+                  <p className="card card-body py-5 border-0 shadow-lg text-center mb-3">
                     <i className="ai-pie-chart text-danger h1 mb-3"></i>
                     <h3 className="h5 mb-0">Analize</h3>
-                  </a>
-                  <a
-                    className="card card-body py-5 border-0 shadow-lg text-center"
-                    href="#"
-                  >
+                  </p>
+                  <p className="card card-body py-5 border-0 shadow-lg text-center">
                     <i className="ai-refresh-ccw text-info h1 mb-3"></i>
                     <h3 className="h5 mb-0">Automate</h3>
-                  </a>
+                  </p>
                 </div>
                 <div className="col-sm-4 px-2 mb-3">
-                  <a
-                    className="card card-body py-5 border-0 shadow-lg text-center mb-3"
-                    href="#"
-                  >
+                  <p className="card card-body py-5 border-0 shadow-lg text-center mb-3">
                     <i className="ai-folder-plus text-success h1 mb-3"></i>
                     <h3 className="h5 mb-0">Create</h3>
-                  </a>
-                  <a
-                    className="card card-body py-5 border-0 shadow-lg text-center"
-                    href="#"
-                  >
+                  </p>
+                  <p className="card card-body py-5 border-0 shadow-lg text-center">
                     <i className="ai-share text-warning h1 mb-3"></i>
                     <h3 className="h5 mb-0">Share</h3>
-                  </a>
+                  </p>
                 </div>
               </div>
             </div>
@@ -275,9 +260,9 @@ function AboutUs() {
                 Check our current opennings and submit your application
               </p>
             </div>
-            <a className="btn btn-gradient" href="#">
+            <button className="btn btn-gradient">
               Submit your application
-            </a>
+            </button>
           </div>
         </div>
       </section>
@@ -285,10 +270,7 @@ function AboutUs() {
         <h2 className="mb-5 text-center">We work with world’s top companies</h2>
         <div className="row">
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -305,13 +287,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -328,13 +307,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -351,13 +327,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -374,13 +347,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -397,13 +367,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -420,13 +387,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -443,13 +407,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -466,13 +427,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -489,13 +447,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -512,13 +467,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -535,13 +487,10 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
           <div className="col-md-3 col-sm-4 col-6 mb-grid-gutter">
-            <a
-              className="card border-0 shadow card-hover py-3 py-sm-4"
-              href="#"
-            >
+            <button className="card border-0 shadow card-hover py-3 py-sm-4">
               <div className="card-body px-1 py-0 text-center">
                 <div className="swap-image">
                   <img
@@ -558,7 +507,7 @@ function AboutUs() {
                   />
                 </div>
               </div>
-            </a>
+            </button>
           </div>
         </div>
       </section>

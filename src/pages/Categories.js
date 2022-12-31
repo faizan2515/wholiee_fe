@@ -38,49 +38,49 @@ function Categories() {
                         data-bs-parent="#categories"
                       >
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             View all
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Blazers &amp; Suits
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Cardigans
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Dresses
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Hoodie &amp; Sweatshirts
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Jackets &amp; Coats
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Jeans
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Lingerie
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Sportswear
-                          </a>
+                          </button>
                         </li>
                       </ul>
                     </li>
@@ -98,49 +98,49 @@ function Categories() {
                         data-bs-parent="#categories"
                       >
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             View all
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Athletic shoes
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Balerinas &amp; Flats
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Boots
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Clogs &amp; Mules
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Flip Flops
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Loafers
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Sandals
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Sneakers
-                          </a>
+                          </button>
                         </li>
                       </ul>
                     </li>
@@ -159,49 +159,49 @@ function Categories() {
                         data-bs-parent="#categories"
                       >
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             View all
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Computers &amp; Accessories
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             TV, Video &amp; Audio
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Smartphones &amp; Tablets
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Cameras, Photo &amp; Video
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Headphones
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Wearable Electronics
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Printers &amp; Ink
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Video Games
-                          </a>
+                          </button>
                         </li>
                       </ul>
                     </li>
@@ -220,34 +220,34 @@ function Categories() {
                         data-bs-parent="#categories"
                       >
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             View all
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Bags
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Belts
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Hats
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Jewelry
-                          </a>
+                          </button>
                         </li>
                         <li>
-                          <a className="widget-link" href="#">
+                          <button className="widget-link border-0 bg-transparent">
                             Cosmetics
-                          </a>
+                          </button>
                         </li>
                       </ul>
                     </li>
@@ -466,20 +466,20 @@ function Categories() {
             <div className="row">
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/01.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Men's clothing
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Simple Cotton Gray T-shirt
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$19.00</span>
                   </div>
@@ -492,35 +492,35 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/02.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Electronics
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Wireless Headphones
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$165.00</span>
                   </div>
@@ -533,15 +533,15 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -551,20 +551,20 @@ function Categories() {
                   <span className="badge badge-floating badge-pill bg-success">
                     New
                   </span>
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/03.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Accessories
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Military Cotton Cap
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$28.00</span>
                   </div>
@@ -577,15 +577,15 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -595,20 +595,20 @@ function Categories() {
                   <span className="badge badge-floating badge-pill bg-danger">
                     Sale
                   </span>
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/04.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Electronics
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         360 Degrees Camera
-                      </a>
+                      </button>
                     </h3>
                     <del className="fs-sm text-muted me-1">$120.40</del>
                     <span className="text-heading fw-semibold">$98.75</span>
@@ -622,35 +622,35 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/05.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Men's shoes
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Sport Running Sneakers
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$140.00</span>
                   </div>
@@ -663,35 +663,35 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/06.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Backpacks
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Vintage Travel Backpack
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$82.00</span>
                   </div>
@@ -704,35 +704,35 @@ function Categories() {
                       <i className="sr-star ai-star-filled active"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/07.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Accessories
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         3-Color Sun Stash Hat
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$25.99</span>
                   </div>
@@ -745,35 +745,35 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/08.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Electronics
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Speaker with Voice Control
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$49.99</span>
                   </div>
@@ -786,35 +786,35 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/09.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Women's shoes
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Women Colorblock Sneakers
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$154.00</span>
                   </div>
@@ -827,35 +827,35 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/10.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Accessories
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Polarized Sunglasses
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">
                       Out of stock
@@ -870,12 +870,12 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-details" href="shop-single.html">
+                      <a className="btn-details">
                         <i className="ai-arrow-right"></i>
                         <span className="btn-tooltip">Details</span>
                       </a>
@@ -885,20 +885,20 @@ function Categories() {
               </div>
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/11.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Men's shoes
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Sport Running Shoes
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$127.00</span>
                   </div>
@@ -911,35 +911,35 @@ function Categories() {
                       <i className="sr-star ai-star-filled active"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="col-md-4 col-sm-6 mb-grid-gutter">
                 <div className="card card-product card-hover">
-                  <a className="card-img-top" href="shop-single.html">
+                  <button className="card-img-top border-0 bg-transparent">
                     <img
                       src="img/shop/catalog/12.jpg"
                       alt="Product thumbnail"
                     />
-                  </a>
+                  </button>
                   <div className="card-body">
-                    <a className="meta-link fs-xs mb-1" href="#">
+                    <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                       Electronics
-                    </a>
+                    </button>
                     <h3 className="fs-md fw-medium mb-2">
-                      <a className="meta-link" href="shop-single.html">
+                      <button className="meta-link border-0 bg-transparent">
                         Smart Watch Series 5
-                      </a>
+                      </button>
                     </h3>
                     <span className="text-heading fw-semibold">$349.99</span>
                   </div>
@@ -952,15 +952,15 @@ function Categories() {
                       <i className="sr-star ai-star"></i>
                     </div>
                     <div className="d-flex align-items-center">
-                      <a className="btn-wishlist" href="#">
+                      <button className="btn-wishlist border-0 bg-transparent">
                         <i className="ai-heart"></i>
                         <span className="btn-tooltip">Wishlist</span>
-                      </a>
+                      </button>
                       <span className="btn-divider"></span>
-                      <a className="btn-addtocart" href="#">
+                      <button className="btn-addtocart border-0 bg-transparent">
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
-                      </a>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -983,7 +983,7 @@ function Categories() {
               <nav className="mb-4" aria-label="Page navigation">
                 <ul className="pagination justify-content-center">
                   <li className="page-item">
-                    <a className="page-link" href="#" aria-label="Previous">
+                    <a className="page-link" aria-label="Previous">
                       <i className="ai-chevron-left"></i>
                     </a>
                   </li>
@@ -991,9 +991,7 @@ function Categories() {
                     <span className="page-link page-link-static">2 / 10</span>
                   </li>
                   <li className="page-item d-none d-sm-block">
-                    <a className="page-link" href="#">
-                      1
-                    </a>
+                    <a className="page-link">1</a>
                   </li>
                   <li
                     className="page-item active d-none d-sm-block"
@@ -1004,23 +1002,17 @@ function Categories() {
                     </span>
                   </li>
                   <li className="page-item d-none d-sm-block">
-                    <a className="page-link" href="#">
-                      3
-                    </a>
+                    <a className="page-link">3</a>
                   </li>
                   <li className="page-item d-none d-sm-block">
-                    <a className="page-link" href="#">
-                      4
-                    </a>
+                    <a className="page-link">4</a>
                   </li>
                   <li className="page-item d-none d-sm-block">...</li>
                   <li className="page-item d-none d-sm-block">
-                    <a className="page-link" href="#">
-                      10
-                    </a>
+                    <a className="page-link">10</a>
                   </li>
                   <li className="page-item">
-                    <a className="page-link" href="#" aria-label="Next">
+                    <a className="page-link" aria-label="Next">
                       <i className="ai-chevron-right"></i>
                     </a>
                   </li>

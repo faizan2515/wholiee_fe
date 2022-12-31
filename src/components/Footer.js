@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -10,29 +11,29 @@ function Footer() {
               <h4 className="widget-title">Sitemap</h4>
               <ul>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/" className="widget-link">
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/all-ads" className="widget-link">
                     All Ads
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/categories" className="widget-link">
                     Categories
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/about-us" className="widget-link">
                     About Us
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/about-us" className="widget-link">
                     Contact Us
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -42,39 +43,39 @@ function Footer() {
               <h4 className="widget-title">Customer zone</h4>
               <ul>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/" className="widget-link">
                     Your account
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/" className="widget-link">
                     Shipping rates &amp; policies
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/" className="widget-link">
                     Refunds &amp; replacements
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/" className="widget-link">
                     Order tracking
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/" className="widget-link">
                     Delivery info
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/" className="widget-link">
                     Taxes &amp; fees
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="widget-link" href="#">
+                  <Link to="/" className="widget-link">
                     News
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -85,29 +86,29 @@ function Footer() {
               <div className="d-flex pt-2 pt-sm-0 ms-auto">
                 <a
                   className="btn-social bs-twitter bs-light me-2 mb-2"
-                  href="#"
+                  href="/"
                 >
                   <i className="ai-twitter"></i>
                 </a>
                 <a
                   className="btn-social bs-facebook bs-light me-2 mb-2"
-                  href="#"
+                  href="/"
                 >
                   <i className="ai-facebook"></i>
                 </a>
                 <a
                   className="btn-social bs-instagram bs-light me-2 mb-2"
-                  href="#"
+                  href="/"
                 >
                   <i className="ai-instagram"></i>
                 </a>
                 <a
                   className="btn-social bs-pinterest bs-light me-2 mb-2"
-                  href="#"
+                  href="/"
                 >
                   <i className="ai-pinterest"></i>
                 </a>
-                <a className="btn-social bs-youtube bs-light mb-2" href="#">
+                <a className="btn-social bs-youtube bs-light mb-2" href="/">
                   <i className="ai-youtube"></i>
                 </a>
               </div>

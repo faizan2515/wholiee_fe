@@ -35,17 +35,17 @@ function AllAds() {
       <div className="row">
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/01.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Men's clothing
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Simple Cotton Gray T-shirt
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$19.00</span>
             </div>
@@ -58,32 +58,32 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/02.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Electronics
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Wireless Headphones
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$165.00</span>
             </div>
@@ -96,15 +96,15 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -114,17 +114,17 @@ function AllAds() {
             <span className="badge badge-floating badge-pill bg-success">
               New
             </span>
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/03.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Accessories
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Military Cotton Cap
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$28.00</span>
             </div>
@@ -137,15 +137,15 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -155,17 +155,17 @@ function AllAds() {
             <span className="badge badge-floating badge-pill bg-danger">
               Sale
             </span>
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/04.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Electronics
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   360 Degrees Camera
-                </a>
+                </button>
               </h3>
               <del className="fs-sm text-muted me-1">$120.40</del>
               <span className="text-heading fw-semibold">$98.75</span>
@@ -179,32 +179,32 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/05.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Men's shoes
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Sport Running Sneakers
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$140.00</span>
             </div>
@@ -217,32 +217,32 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/06.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Backpacks
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Vintage Travel Backpack
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$82.00</span>
             </div>
@@ -255,32 +255,32 @@ function AllAds() {
                 <i className="sr-star ai-star-filled active"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/07.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Accessories
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   3-Color Sun Stash Hat
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$25.99</span>
             </div>
@@ -293,32 +293,32 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/08.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Electronics
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Speaker with Voice Control
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$49.99</span>
             </div>
@@ -331,32 +331,32 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/09.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Women's shoes
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Women Colorblock Sneakers
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$154.00</span>
             </div>
@@ -369,32 +369,32 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/10.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Accessories
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Polarized Sunglasses
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">Out of stock</span>
             </div>
@@ -407,32 +407,32 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-details" href="shop-single.html">
+                <button className="btn-details border-0 bg-transparent">
                   <i className="ai-arrow-right"></i>
                   <span className="btn-tooltip">Details</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/11.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Men's shoes
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Sport Running Shoes
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$127.00</span>
             </div>
@@ -445,32 +445,32 @@ function AllAds() {
                 <i className="sr-star ai-star-filled active"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
         </div>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
-            <a className="card-img-top" href="shop-single.html">
+            <button className="card-img-top border-0 bg-transparent">
               <img src="img/shop/catalog/12.jpg" alt="Product thumbnail" />
-            </a>
+            </button>
             <div className="card-body">
-              <a className="meta-link fs-xs mb-1" href="#">
+              <button className="meta-link fs-xs mb-1 border-0 bg-transparent">
                 Electronics
-              </a>
+              </button>
               <h3 className="fs-md fw-medium mb-2">
-                <a className="meta-link" href="shop-single.html">
+                <button className="meta-link border-0 bg-transparent">
                   Smart Watch Series 5
-                </a>
+                </button>
               </h3>
               <span className="text-heading fw-semibold">$349.99</span>
             </div>
@@ -483,15 +483,15 @@ function AllAds() {
                 <i className="sr-star ai-star"></i>
               </div>
               <div className="d-flex align-items-center">
-                <a className="btn-wishlist" href="#">
+                <button className="btn-wishlist border-0 bg-transparent">
                   <i className="ai-heart"></i>
                   <span className="btn-tooltip">Wishlist</span>
-                </a>
+                </button>
                 <span className="btn-divider"></span>
-                <a className="btn-addtocart" href="#">
+                <button className="btn-addtocart border-0 bg-transparent">
                   <i className="ai-shopping-cart"></i>
                   <span className="btn-tooltip">To Cart</span>
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -512,17 +512,15 @@ function AllAds() {
         <nav className="mb-4" aria-label="Page navigation">
           <ul className="pagination justify-content-center">
             <li className="page-item">
-              <a className="page-link" href="#" aria-label="Previous">
+              <button className="page-link" aria-label="Previous">
                 <i className="ai-chevron-left"></i>
-              </a>
+              </button>
             </li>
             <li className="page-item d-sm-none">
               <span className="page-link page-link-static">2 / 10</span>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
-                1
-              </a>
+              <button className="page-link">1</button>
             </li>
             <li
               className="page-item active d-none d-sm-block"
@@ -533,25 +531,19 @@ function AllAds() {
               </span>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
-                3
-              </a>
+              <button className="page-link">3</button>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
-                4
-              </a>
+              <button className="page-link">4</button>
             </li>
             <li className="page-item d-none d-sm-block">...</li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
-                10
-              </a>
+              <button className="page-link">10</button>
             </li>
             <li className="page-item">
-              <a className="page-link" href="#" aria-label="Next">
+              <button className="page-link" aria-label="Next">
                 <i className="ai-chevron-right"></i>
-              </a>
+              </button>
             </li>
           </ul>
         </nav>
