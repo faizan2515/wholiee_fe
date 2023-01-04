@@ -59,22 +59,12 @@ function Footer() {
                 </li>
                 <li>
                   <Link to="/" className="widget-link">
-                    Order tracking
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/" className="widget-link">
                     Delivery info
                   </Link>
                 </li>
                 <li>
                   <Link to="/" className="widget-link">
                     Taxes &amp; fees
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/" className="widget-link">
-                    News
                   </Link>
                 </li>
               </ul>

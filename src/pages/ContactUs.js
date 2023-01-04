@@ -137,47 +137,19 @@ function ContactUs() {
           </div>
           <div className="col-lg-4 col-md-4 offset-md-1">
             <h2 className="h4 pb-3">Contact details</h2>
-            <h3 className="h6 pb-2">North America - New York, NY</h3>
+            <h3 className="h6 pb-2">Karachi, Pakistan</h3>
             <ul className="list-unstyled fs-sm pb-3">
               <li className="d-flex align-items-top mb-3">
                 <i className="ai-map-pin fs-xl text-muted mt-1 me-2 pe-1"></i>
-                <div>
-                  396 Lillian Blvd, Holbrook,
-                  <br />
-                  NY 11741, USA
-                  <br />
-                  <a className="fancy-link" href="#map" data-scroll>
-                    See on the map
-                  </a>
-                </div>
+                <div>Office #6, PECHS block 6, urbansquare</div>
               </li>
               <li className="d-flex align-items-center mb-3">
                 <i className="ai-mail fs-xl text-muted me-2 pe-1"></i>
-                <div>new.york@example.com</div>
+                <div>whollie@gmail.com</div>
               </li>
               <li className="d-flex align-items-center mb-3">
                 <i className="ai-phone fs-xl text-muted me-2 pe-1"></i>
-                <div>+ 1 526 220 0459</div>
-              </li>
-            </ul>
-            <h3 className="h6 pb-2">Europe - Berlin, Germany</h3>
-            <ul className="list-unstyled fs-sm">
-              <li className="d-flex align-items-top mb-3">
-                <i className="ai-map-pin fs-xl text-muted mt-1 me-2 pe-1"></i>
-                <div>
-                  Mohrenstrasse 37 10117,
-                  <br />
-                  Berlin, Germany
-                  <br />
-                </div>
-              </li>
-              <li className="d-flex align-items-center mb-3">
-                <i className="ai-mail fs-xl text-muted me-2 pe-1"></i>
-                <div>berlin@example.com</div>
-              </li>
-              <li className="d-flex align-items-center mb-3">
-                <i className="ai-phone fs-xl text-muted me-2 pe-1"></i>
-                <div>030 778 345 26</div>
+                <div>+92 334 3505020</div>
               </li>
             </ul>
           </div>
