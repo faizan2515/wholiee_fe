@@ -2,7 +2,7 @@ import React from "react";
 import { Carousel } from "react-bootstrap";
 import slides from "../data/slides";
 
-function Home() {
+function Home({ products }) {
   return (
     <>
       <Carousel style={{ maxHeight: 800, overflow: "hidden" }}>
@@ -19,358 +19,39 @@ function Home() {
       <section className="container pt-5 mt-5 mt-md-0 pt-md-6 pt-lg-7">
         <h2 className="text-center mb-5">Trending products</h2>
         <div className="row pb-1">
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-            <div className="card card-product card-hover">
-              <button className="border-0 bg-transparent card-img-top">
-                <img src="img/shop/catalog/01.jpg" alt="Product thumbnail" />
-              </button>
-              <div className="card-body">
-                <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                  Men's clothing
+          {products.map((product) => (
+            <div
+              key={product.id}
+              className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter"
+            >
+              <div className="card card-product card-hover">
+                <button className="border-0 bg-transparent card-img-top">
+                  <img src={product.Product_Image} alt="Product thumbnail" />
                 </button>
-                <h3 className="fs-md fw-medium mb-2">
-                  <button className="border-0 bg-transparent meta-link">
-                    Simple Cotton Gray T-shirt
+                <div className="card-body">
+                  <button className="border-0 bg-transparent meta-link fs-xs mb-1">
+                    {product.Product_Category}
                   </button>
-                </h3>
-                <span className="text-heading fw-semibold">$19.00</span>
-              </div>
-              <div className="card-footer">
-                <div className="star-rating mt-n1">
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star"></i>
-                  <i className="sr-star ai-star"></i>
+                  <h3 className="fs-md fw-medium mb-2">
+                    <button className="border-0 bg-transparent meta-link">
+                      {product.Product_name}
+                    </button>
+                  </h3>
+                  <span className="text-heading fw-semibold">
+                    Rs. {product.Product_Per_Price}
+                  </span>
                 </div>
-                <div className="d-flex align-items-center">
-                  <button className="border-0 bg-transparent btn-wishlist">
-                    <i className="ai-heart"></i>
-                    <span className="btn-tooltip">Wishlist</span>
-                  </button>
-                  <span className="btn-divider"></span>
-                  <button className="border-0 bg-transparent btn-addtocart">
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
+                <div className="card-footer justify-content-center">
+                  <div className="d-flex align-items-center">
+                    <button className="border-0 bg-transparent btn-addtocart">
+                      <i className="ai-shopping-cart"></i>
+                      <span className="btn-tooltip">To Cart</span>
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-            <div className="card card-product card-hover">
-              <button className="border-0 bg-transparent card-img-top">
-                <img src="img/shop/catalog/02.jpg" alt="Product thumbnail" />
-              </button>
-              <div className="card-body">
-                <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                  Electronics
-                </button>
-                <h3 className="fs-md fw-medium mb-2">
-                  <button className="border-0 bg-transparent meta-link">
-                    Wireless Headphones
-                  </button>
-                </h3>
-                <span className="text-heading fw-semibold">$165.00</span>
-              </div>
-              <div className="card-footer">
-                <div className="star-rating mt-n1">
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star"></i>
-                </div>
-                <div className="d-flex align-items-center">
-                  <button className="border-0 bg-transparent btn-wishlist">
-                    <i className="ai-heart"></i>
-                    <span className="btn-tooltip">Wishlist</span>
-                  </button>
-                  <span className="btn-divider"></span>
-                  <button className="border-0 bg-transparent btn-addtocart">
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-            <div className="card card-product card-hover">
-              <span className="badge badge-floating rounded-pill bg-success">
-                New
-              </span>
-              <button className="border-0 bg-transparent card-img-top">
-                <img src="img/shop/catalog/03.jpg" alt="Product thumbnail" />
-              </button>
-              <div className="card-body">
-                <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                  Accessories
-                </button>
-                <h3 className="fs-md fw-medium mb-2">
-                  <button className="border-0 bg-transparent meta-link">
-                    Military Cotton Cap
-                  </button>
-                </h3>
-                <span className="text-heading fw-semibold">$28.00</span>
-              </div>
-              <div className="card-footer">
-                <div className="star-rating mt-n1">
-                  <i className="sr-star ai-star"></i>
-                  <i className="sr-star ai-star"></i>
-                  <i className="sr-star ai-star"></i>
-                  <i className="sr-star ai-star"></i>
-                  <i className="sr-star ai-star"></i>
-                </div>
-                <div className="d-flex align-items-center">
-                  <button className="border-0 bg-transparent btn-wishlist">
-                    <i className="ai-heart"></i>
-                    <span className="btn-tooltip">Wishlist</span>
-                  </button>
-                  <span className="btn-divider"></span>
-                  <button className="border-0 bg-transparent btn-addtocart">
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-            <div className="card card-product card-hover">
-              <button className="border-0 bg-transparent card-img-top">
-                <img src="img/shop/catalog/09.jpg" alt="Product thumbnail" />
-              </button>
-              <div className="card-body">
-                <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                  Women's shoes
-                </button>
-                <h3 className="fs-md fw-medium mb-2">
-                  <button className="border-0 bg-transparent meta-link">
-                    Women Colorblock Sneakers
-                  </button>
-                </h3>
-                <span className="text-heading fw-semibold">$154.00</span>
-              </div>
-              <div className="card-footer">
-                <div className="star-rating mt-n1">
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star"></i>
-                </div>
-                <div className="d-flex align-items-center">
-                  <button className="border-0 bg-transparent btn-wishlist">
-                    <i className="ai-heart"></i>
-                    <span className="btn-tooltip">Wishlist</span>
-                  </button>
-                  <span className="btn-divider"></span>
-                  <button className="border-0 bg-transparent btn-addtocart">
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-            <div className="card card-product card-hover">
-              <span className="badge badge-floating rounded-pill bg-danger">
-                Sale
-              </span>
-              <button className="border-0 bg-transparent card-img-top">
-                <img src="img/shop/catalog/04.jpg" alt="Product thumbnail" />
-              </button>
-              <div className="card-body">
-                <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                  Electronics
-                </button>
-                <h3 className="fs-md fw-medium mb-2">
-                  <button className="border-0 bg-transparent meta-link">
-                    360 Degrees Camera
-                  </button>
-                </h3>
-                <del className="fs-sm text-muted me-1">$120.40</del>
-                <span className="text-heading fw-semibold">$98.75</span>
-              </div>
-              <div className="card-footer">
-                <div className="star-rating mt-n1">
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star"></i>
-                </div>
-                <div className="d-flex align-items-center">
-                  <button className="border-0 bg-transparent btn-wishlist">
-                    <i className="ai-heart"></i>
-                    <span className="btn-tooltip">Wishlist</span>
-                  </button>
-                  <span className="btn-divider"></span>
-                  <button className="border-0 bg-transparent btn-addtocart">
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-            <div className="card card-product card-hover">
-              <button className="border-0 bg-transparent card-img-top">
-                <img src="img/shop/catalog/07.jpg" alt="Product thumbnail" />
-              </button>
-              <div className="card-body">
-                <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                  Accessories
-                </button>
-                <h3 className="fs-md fw-medium mb-2">
-                  <button className="border-0 bg-transparent meta-link">
-                    3-Color Sun Stash Hat
-                  </button>
-                </h3>
-                <span className="text-heading fw-semibold">$25.99</span>
-              </div>
-              <div className="card-footer">
-                <div className="star-rating mt-n1">
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star"></i>
-                  <i className="sr-star ai-star"></i>
-                </div>
-                <div className="d-flex align-items-center">
-                  <button className="border-0 bg-transparent btn-wishlist">
-                    <i className="ai-heart"></i>
-                    <span className="btn-tooltip">Wishlist</span>
-                  </button>
-                  <span className="btn-divider"></span>
-                  <button className="border-0 bg-transparent btn-addtocart">
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-            <div className="card card-product card-hover">
-              <span className="badge badge-floating rounded-pill bg-warning">
-                Top rated
-              </span>
-              <button className="border-0 bg-transparent card-img-top">
-                <img src="img/shop/catalog/06.jpg" alt="Product thumbnail" />
-              </button>
-              <div className="card-body">
-                <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                  Backpacks
-                </button>
-                <h3 className="fs-md fw-medium mb-2">
-                  <button className="border-0 bg-transparent meta-link">
-                    Vintage Travel Backpack
-                  </button>
-                </h3>
-                <span className="text-heading fw-semibold">$82.00</span>
-              </div>
-              <div className="card-footer">
-                <div className="star-rating mt-n1">
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                </div>
-                <div className="d-flex align-items-center">
-                  <button className="border-0 bg-transparent btn-wishlist">
-                    <i className="ai-heart"></i>
-                    <span className="btn-tooltip">Wishlist</span>
-                  </button>
-                  <span className="btn-divider"></span>
-                  <button className="border-0 bg-transparent btn-addtocart">
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
-            <div className="card card-product card-hover">
-              <button className="border-0 bg-transparent card-img-top">
-                <img src="img/shop/catalog/08.jpg" alt="Product thumbnail" />
-              </button>
-              <div className="card-body">
-                <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                  Electronics
-                </button>
-                <h3 className="fs-md fw-medium mb-2">
-                  <button className="border-0 bg-transparent meta-link">
-                    Speaker with Voice Control
-                  </button>
-                </h3>
-                <span className="text-heading fw-semibold">$49.99</span>
-              </div>
-              <div className="card-footer">
-                <div className="star-rating mt-n1">
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star"></i>
-                </div>
-                <div className="d-flex align-items-center">
-                  <button className="border-0 bg-transparent btn-wishlist">
-                    <i className="ai-heart"></i>
-                    <span className="btn-tooltip">Wishlist</span>
-                  </button>
-                  <span className="btn-divider"></span>
-                  <button className="border-0 bg-transparent btn-addtocart">
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 d-none d-md-block d-lg-none mb-grid-gutter">
-            <div className="card card-product card-hover">
-              <button className="border-0 bg-transparent card-img-top">
-                <img src="img/shop/catalog/05.jpg" alt="Product thumbnail" />
-              </button>
-              <div className="card-body">
-                <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                  Men's shoes
-                </button>
-                <h3 className="fs-md fw-medium mb-2">
-                  <button className="border-0 bg-transparent meta-link">
-                    Sport Running Sneakers
-                  </button>
-                </h3>
-                <span className="text-heading fw-semibold">$140.00</span>
-              </div>
-              <div className="card-footer">
-                <div className="star-rating mt-n1">
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star-filled active"></i>
-                  <i className="sr-star ai-star"></i>
-                </div>
-                <div className="d-flex align-items-center">
-                  <button className="border-0 bg-transparent btn-wishlist">
-                    <i className="ai-heart"></i>
-                    <span className="btn-tooltip">Wishlist</span>
-                  </button>
-                  <span className="btn-divider"></span>
-                  <button className="border-0 bg-transparent btn-addtocart">
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
       <section className="container py-5 mt-3 my-md-0 py-md-6 py-lg-7">
