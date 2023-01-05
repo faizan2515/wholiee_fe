@@ -5,7 +5,7 @@ import slides from "../data/slides";
 function Home() {
   return (
     <>
-      <Carousel>
+      <Carousel style={{ maxHeight: 800, overflow: "hidden" }}>
         {slides.map((slide) => (
           <Carousel.Item key={slide.id}>
             <img

@@ -1,7 +1,17 @@
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import getCategories from "../api/getCategories";
 // import Cart from "./Cart";
 
 function Header() {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    getCategories().then((response) => {
+      setCategories(response.data);
+    });
+  }, []);
+
   return (
     <>
       {/* <Cart /> */}
@@ -24,19 +34,19 @@ function Header() {
               to="/"
               className="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4"
             >
-              <p className="m-0 text-primary">Wholiee</p>
-              {/* <img
+              {/* <p className="m-0 text-primary">Wholiee</p> */}
+              <img
                 className="d-none d-lg-block"
-                src="img/logo/logo-dark.png"
-                alt="Around"
-                width="153"
+                src="img/logo/logo .png"
+                alt="logo"
+                width="90"
               />
               <img
                 className="d-lg-none"
-                src="img/logo/logo-icon.png"
-                alt="Around"
-                width="58"
-              /> */}
+                src="img/logo/logo .png"
+                alt="logo"
+                width="80"
+              />
             </NavLink>
 
             {/* <div className="d-flex align-items-center order-lg-3 ms-lg-auto">
@@ -86,15 +96,30 @@ function Header() {
                       All Ads
                     </NavLink>
                   </li>
-                  <li className="nav-item">
-                    <NavLink
+                  <li className="nav-item dropdown">
+                    {/* <NavLink
                       to="categories"
                       className={({ isActive }) =>
                         isActive ? "nav-link active" : "nav-link"
                       }
                     >
                       Categories
-                    </NavLink>
+                    </NavLink> */}
+                    <button
+                      className="nav-link dropdown-toggle bg-transparent border-0"
+                      data-bs-toggle="dropdown"
+                    >
+                      Categories
+                    </button>
+                    <ul className="dropdown-menu">
+                      {categories.map((category) => (
+                        <li key={category.id}>
+                          <button className="dropdown-item">
+                            {category.category}
+                          </button>
+                        </li>
+                      ))}
+                    </ul>
                   </li>
                   <li className="nav-item">
                     <NavLink
