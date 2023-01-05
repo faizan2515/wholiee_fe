@@ -20,7 +20,7 @@ function Home({ products }) {
         <h2 className="text-center mb-5">Trending products</h2>
         <div className="row pb-1">
           {products.map((product, index) => {
-            if (index > 5) return;
+            if (index > 5) return null;
 
             return (
               <div
