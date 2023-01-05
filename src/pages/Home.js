@@ -19,39 +19,43 @@ function Home({ products }) {
       <section className="container pt-5 mt-5 mt-md-0 pt-md-6 pt-lg-7">
         <h2 className="text-center mb-5">Trending products</h2>
         <div className="row pb-1">
-          {products.map((product) => (
-            <div
-              key={product.id}
-              className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter"
-            >
-              <div className="card card-product card-hover">
-                <button className="border-0 bg-transparent card-img-top">
-                  <img src={product.Product_Image} alt="Product thumbnail" />
-                </button>
-                <div className="card-body">
-                  <button className="border-0 bg-transparent meta-link fs-xs mb-1">
-                    {product.Product_Category}
+          {products.map((product, index) => {
+            if (index > 5) return;
+
+            return (
+              <div
+                key={product.id}
+                className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter"
+              >
+                <div className="card card-product card-hover">
+                  <button className="border-0 bg-transparent card-img-top">
+                    <img src={product.Product_Image} alt="Product thumbnail" />
                   </button>
-                  <h3 className="fs-md fw-medium mb-2">
-                    <button className="border-0 bg-transparent meta-link">
-                      {product.Product_name}
+                  <div className="card-body">
+                    <button className="border-0 bg-transparent meta-link fs-xs mb-1">
+                      {product.Product_Category}
                     </button>
-                  </h3>
-                  <span className="text-heading fw-semibold">
-                    Rs. {product.Product_Per_Price}
-                  </span>
-                </div>
-                <div className="card-footer justify-content-center">
-                  <div className="d-flex align-items-center">
-                    <button className="border-0 bg-transparent btn-addtocart">
-                      <i className="ai-shopping-cart"></i>
-                      <span className="btn-tooltip">To Cart</span>
-                    </button>
+                    <h3 className="fs-md fw-medium mb-2">
+                      <button className="border-0 bg-transparent meta-link">
+                        {product.Product_name}
+                      </button>
+                    </h3>
+                    <span className="text-heading fw-semibold">
+                      Rs. {product.Product_Per_Price}
+                    </span>
+                  </div>
+                  <div className="card-footer justify-content-center">
+                    <div className="d-flex align-items-center">
+                      <button className="border-0 bg-transparent btn-addtocart">
+                        <i className="ai-shopping-cart"></i>
+                        <span className="btn-tooltip">To Cart</span>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </section>
       <section className="container py-5 mt-3 my-md-0 py-md-6 py-lg-7">
