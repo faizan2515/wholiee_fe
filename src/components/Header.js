@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import Cart from "./Cart";
+// import Cart from "./Cart";
 
 function Header() {
   return (
     <>
-      <Cart />
+      {/* <Cart /> */}
       <header className="header">
         <div
           className="navbar navbar-expand-lg navbar-light bg-light navbar-shadow navbar-sticky"
@@ -39,7 +39,7 @@ function Header() {
               /> */}
             </NavLink>
 
-            <div className="d-flex align-items-center order-lg-3 ms-lg-auto">
+            {/* <div className="d-flex align-items-center order-lg-3 ms-lg-auto">
               <div className="navbar-tool me-2">
                 <button
                   className="navbar-tool-icon-box border-0 bg-transparent"
@@ -50,7 +50,7 @@ function Header() {
                   <span className="navbar-tool-badge">3</span>
                 </button>
               </div>
-            </div>
+            </div> */}
             <div
               className="offcanvas offcanvas-collapse order-lg-2"
               id="primaryMenu"

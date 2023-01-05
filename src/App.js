@@ -9,6 +9,9 @@ import {
   Checkout,
 } from "./pages";
 import Layout from "./components/Layout";
+import axios from "axios";
+
+axios.defaults.baseURL = "https://wholiee.code7labs.com/";
 
 function App() {
   return (

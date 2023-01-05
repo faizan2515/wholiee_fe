@@ -1,38 +1,11 @@
 import React from "react";
+import { Container, Row } from "react-bootstrap";
 
 function AllAds() {
   return (
-    <div className="container py-4 mb-2 mb-sm-0 pb-sm-5">
-      <div className="d-flex justify-content-between align-items-center py-3 mb-3">
-        <div className="d-flex justify-content-center align-items-center">
-          <select className="form-select me-2" style={{ width: "15.25rem" }}>
-            <option value="popularity">Sort by popularity</option>
-            <option value="rating">Sort by average rating</option>
-            <option value="newness">Sort by newness</option>
-            <option value="price: low to high">
-              Sort by price: low to high
-            </option>
-            <option value="price: high to low">
-              Sort by price: high to low
-            </option>
-          </select>
-          <div className="d-none d-sm-block fs-sm text-nowrap ps-1 mb-1">
-            of 135 products
-          </div>
-        </div>
-        <div className="d-none d-lg-flex justify-content-center align-items-center">
-          <label className="pe-1 me-2 mb-0 form-label px-0">Show</label>
-          <select className="form-select me-2" style={{ width: "5rem" }}>
-            <option value="12">12</option>
-            <option value="24">24</option>
-            <option value="36">36</option>
-            <option value="48">48</option>
-            <option value="60">60</option>
-          </select>
-          <div className="fs-sm text-nowrap ps-1 mb-1">products per page</div>
-        </div>
-      </div>
-      <div className="row">
+    <Container className="my-5">
+      <h1 className="mb-3">All Products</h1>
+      <Row>
         <div className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter">
           <div className="card card-product card-hover">
             <button className="card-img-top border-0 bg-transparent">
@@ -496,59 +469,8 @@ function AllAds() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="d-md-flex justify-content-between align-items-center pt-3 pb-2">
-        <div className="d-flex justify-content-center align-items-center mb-4">
-          <label className="pe-1 me-2 mb-0 form-label px-0">Show</label>
-          <select className="form-select me-2" style={{ width: "5rem" }}>
-            <option value="12">12</option>
-            <option value="24">24</option>
-            <option value="36">36</option>
-            <option value="48">48</option>
-            <option value="60">60</option>
-          </select>
-          <div className="fs-sm text-nowrap ps-1 mb-1">products per page</div>
-        </div>
-        <nav className="mb-4" aria-label="Page navigation">
-          <ul className="pagination justify-content-center">
-            <li className="page-item">
-              <button className="page-link" aria-label="Previous">
-                <i className="ai-chevron-left"></i>
-              </button>
-            </li>
-            <li className="page-item d-sm-none">
-              <span className="page-link page-link-static">2 / 10</span>
-            </li>
-            <li className="page-item d-none d-sm-block">
-              <button className="page-link">1</button>
-            </li>
-            <li
-              className="page-item active d-none d-sm-block"
-              aria-current="page"
-            >
-              <span className="page-link">
-                2<span className="visually-hidden">(current)</span>
-              </span>
-            </li>
-            <li className="page-item d-none d-sm-block">
-              <button className="page-link">3</button>
-            </li>
-            <li className="page-item d-none d-sm-block">
-              <button className="page-link">4</button>
-            </li>
-            <li className="page-item d-none d-sm-block">...</li>
-            <li className="page-item d-none d-sm-block">
-              <button className="page-link">10</button>
-            </li>
-            <li className="page-item">
-              <button className="page-link" aria-label="Next">
-                <i className="ai-chevron-right"></i>
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+      </Row>
+    </Container>
   );
 }
 

@@ -3,7 +3,7 @@ import React from "react";
 function Error() {
   return (
     <div
-      className="container d-flex flex-column justify-content-center pt-5 mt-n6"
+      className="container d-flex flex-column justify-content-center pt-5 mt-n6 vh-100"
       style={{ flex: "1 0 auto" }}
     >
       <div className="pt-7 pb-5">

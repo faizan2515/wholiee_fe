@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <footer className="footer bg-dark pt-5 pt-md-6">
-      <div className="container pt-3 pb-0 pt-md-0 pb-md-3">
+    <footer className="footer bg-dark">
+      {/* <div className="container pt-3 pb-0 pt-md-0 pb-md-3">
         <div className="row mb-4">
           <div className="col-md-4">
             <div className="widget widget-light pb-2 mb-4">
@@ -105,7 +105,7 @@ function Footer() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="bg-darker pt-2">
         <div className="container py-sm-3">
           <div className="d-sm-flex justify-content-between align-items-center pb-4 pb-sm-2">
