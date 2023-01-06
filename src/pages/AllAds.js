@@ -12,7 +12,10 @@ function AllAds({ products }) {
             className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter"
           >
             <div className="card card-product card-hover">
-              <button className="card-img-top border-0 bg-transparent">
+              <button
+                className="card-img-top border-0 bg-transparent"
+                style={{ height: 232 }}
+              >
                 <img src={product.Product_Image} alt="Product thumbnail" />
               </button>
               <div className="card-body">
