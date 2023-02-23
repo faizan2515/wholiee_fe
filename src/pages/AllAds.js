@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row } from "react-bootstrap";
+import { useApp } from "../withAppProvider";
 
 function AllAds({ products }) {
+  const { cartItems, setCartItems } = useApp();
   return (
     <Container className="my-5 min-vh-100">
       <h1 className="mb-3">All Products</h1>
@@ -33,7 +35,28 @@ function AllAds({ products }) {
               </div>
               <div className="card-footer justify-content-center">
                 <div className="d-flex align-items-center">
-                  <button className="btn-addtocart border-0 bg-transparent">
+                  <button
+                    className="btn-addtocart border-0 bg-transparent"
+                    onClick={() => {
+                      if (cartItems.some((item) => item.id === product.id)) {
+                        setCartItems((cart) =>
+                          cart.map((item) =>
+                            item.id === product.id
+                              ? {
+                                  ...item,
+                                  quantity: item.quantity + 1,
+                                }
+                              : item
+                          )
+                        );
+                      } else {
+                        setCartItems((cart) => [
+                          ...cart,
+                          { ...product, quantity: 1 },
+                        ]);
+                      }
+                    }}
+                  >
                     <i className="ai-shopping-cart"></i>
                     <span className="btn-tooltip">To Cart</span>
                   </button>

@@ -1,8 +1,10 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
 import slides from "../data/slides";
+import { useApp } from "../withAppProvider";
 
 function Home({ products }) {
+  const { cartItems, setCartItems } = useApp();
   return (
     <>
       <Carousel style={{ maxHeight: 800, overflow: "hidden" }}>
@@ -49,7 +51,30 @@ function Home({ products }) {
                   </div>
                   <div className="card-footer justify-content-center">
                     <div className="d-flex align-items-center">
-                      <button className="border-0 bg-transparent btn-addtocart">
+                      <button
+                        className="border-0 bg-transparent btn-addtocart"
+                        onClick={() => {
+                          if (
+                            cartItems.some((item) => item.id === product.id)
+                          ) {
+                            setCartItems((cart) =>
+                              cart.map((item) =>
+                                item.id === product.id
+                                  ? {
+                                      ...item,
+                                      quantity: item.quantity + 1,
+                                    }
+                                  : item
+                              )
+                            );
+                          } else {
+                            setCartItems((cart) => [
+                              ...cart,
+                              { ...product, quantity: 1 },
+                            ]);
+                          }
+                        }}
+                      >
                         <i className="ai-shopping-cart"></i>
                         <span className="btn-tooltip">To Cart</span>
                       </button>

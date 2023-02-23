@@ -1,8 +1,10 @@
 import React from "react";
+import { useApp } from "../withAppProvider";
 
 function Checkout() {
+  const { cartItems, setCartItems } = useApp();
   return (
-    <form className="sidebar-enabled sidebar-end needs-validation" novalidate>
+    <form className="sidebar-enabled sidebar-end needs-validation" noValidate>
       <div className="container">
         <div className="row">
           <div className="col-lg-8 content py-4">
@@ -139,133 +141,80 @@ function Checkout() {
           <div className="col-lg-4 sidebar bg-secondary pt-5 ps-lg-4 pb-md-2">
             <div className="ps-lg-4 mb-3 pb-5">
               <h2 className="h4 pb-3">Your cart</h2>
-              <div className="d-flex align-items-center mb-4">
-                <img
-                  className="rounded"
-                  src="img/demo/shop-homepage/thumbnails/05.jpg"
-                  alt="Product"
-                  width="60"
-                />
-                <div className="w-100 ps-2 ms-1">
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="me-3">
-                      <h4 className="nav-heading fs-md mb-1">
-                        Smart Watch Series 5
-                      </h4>
-                      <div className="d-flex align-items-center fs-sm">
-                        <span className="me-2">$364.99</span>
-                        <span className="me-2">x</span>
-                        <input
-                          className="form-control form-control-sm px-2"
-                          type="number"
-                          style={{ maxWidth: "3.5rem" }}
-                          min="1"
-                          defaultValue="1"
-                        />
+              {cartItems.map((item) => (
+                <div className="d-flex align-items-center mb-3" key={item.id}>
+                  <img
+                    className="rounded"
+                    src={item.Product_Image}
+                    alt="Product"
+                    width="60"
+                  />
+                  <div className="w-100 ps-2 ms-1">
+                    <div className="d-flex align-items-center justify-content-between">
+                      <div className="me-3">
+                        <h4 className="nav-heading fs-md mb-1">
+                          {item.Product_name}
+                        </h4>
+                        <div className="d-flex align-items-center fs-sm">
+                          <span className="me-2">
+                            Rs. {item.Product_Per_Price}
+                          </span>
+                          <span className="me-2">x</span>
+                          <input
+                            className="form-control form-control-sm px-2"
+                            type="number"
+                            style={{ maxWidth: "3.5rem" }}
+                            min="1"
+                            value={item.quantity}
+                            onChange={(event) => {
+                              setCartItems((cart) =>
+                                cart.map((it) =>
+                                  it.id === item.id
+                                    ? {
+                                        ...it,
+                                        quantity: parseInt(event.target.value),
+                                      }
+                                    : it
+                                )
+                              );
+                            }}
+                          />
+                        </div>
                       </div>
-                    </div>
-                    <div className="ps-3 border-start">
-                      <button
-                        className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
-                        data-bs-toggle="tooltip"
-                        title="Remove"
-                      >
-                        <i className="ai-x-circle"></i>
-                      </button>
+                      <div className="ps-3 border-start">
+                        <button
+                          className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
+                          data-bs-toggle="tooltip"
+                          title="Remove"
+                          onClick={() => {
+                            setCartItems((prev) =>
+                              prev.filter((it) => it.id !== item.id)
+                            );
+                          }}
+                        >
+                          <i className="ai-x-circle"></i>
+                        </button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div className="d-flex align-items-center mb-4">
-                <img
-                  className="rounded"
-                  src="img/demo/shop-homepage/thumbnails/02.jpg"
-                  alt="Product"
-                  width="60"
-                />
-                <div className="w-100 ps-2 ms-1">
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="me-3">
-                      <h4 className="nav-heading fs-md mb-1">
-                        Running Sneakers, Collection
-                      </h4>
-                      <div className="d-flex align-items-center fs-sm">
-                        <span className="me-2">$145.00</span>
-                        <span className="me-2">x</span>
-                        <input
-                          className="form-control form-control-sm px-2"
-                          type="number"
-                          style={{ maxWidth: "3.5rem" }}
-                          min="1"
-                          defaultValue="1"
-                        />
-                      </div>
-                    </div>
-                    <div className="ps-3 border-start">
-                      <button
-                        className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
-                        data-bs-toggle="tooltip"
-                        title="Remove"
-                      >
-                        <i className="ai-x-circle"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="d-flex align-items-center mb-4">
-                <img
-                  className="rounded"
-                  src="img/demo/shop-homepage/thumbnails/06.jpg"
-                  alt="Product"
-                  width="60"
-                />
-                <div className="w-100 ps-2 ms-1">
-                  <div className="d-flex align-items-center justify-content-between">
-                    <div className="me-3">
-                      <h4 className="nav-heading fs-md mb-1">
-                        Wireless Bluetooth Headset
-                      </h4>
-                      <div className="d-flex align-items-center fs-sm">
-                        <span className="me-2">$258.00</span>
-                        <span className="me-2">x</span>
-                        <input
-                          className="form-control form-control-sm px-2"
-                          type="number"
-                          style={{ maxWidth: "3.5rem" }}
-                          min="1"
-                          defaultValue="1"
-                        />
-                      </div>
-                    </div>
-                    <div className="ps-3 border-start">
-                      <button
-                        className="d-block text-danger text-decoration-none fs-xl border-0 bg-transparent"
-                        data-bs-toggle="tooltip"
-                        title="Remove"
-                      >
-                        <i className="ai-x-circle"></i>
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              ))}
+              {cartItems.length === 0 && (
+                <h4 className="text-center my-2">No item in the cart</h4>
+              )}
               <hr className="mt-0 mb-4" />
               <div className="d-flex justify-content-between mb-3">
-                <span className="h6 mb-0">Subtotal:</span>
-                <span className="text-nav">$776.99</span>
-              </div>
-              <div className="d-flex justify-content-between mb-3">
-                <span className="h6 mb-0">Tax:</span>
-                <span className="text-nav">&mdash;</span>
-              </div>
-              <div className="d-flex justify-content-between mb-3">
-                <span className="h6 mb-0">Shipping:</span>
-                <span className="text-nav">$12.35</span>
-              </div>
-              <div className="d-flex justify-content-between mb-3">
                 <span className="h6 mb-0">Total:</span>
-                <span className="h6 mb-0">$789.34</span>
+                <span className="h6 mb-0">
+                  Rs.{" "}
+                  {cartItems.reduce(
+                    (prev, curr) =>
+                      prev +
+                      parseFloat(curr.Product_Per_Price) *
+                        parseInt(curr.quantity),
+                    0
+                  )}
+                </span>
               </div>
               <div
                 className="accordion pt-4 mb-grid-gutter"

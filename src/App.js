@@ -12,6 +12,7 @@ import Layout from "./components/Layout";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import getProducts from "./api/getProducts";
+import withAppProvider from "./withAppProvider";
 
 axios.defaults.baseURL = "https://wholiee.code7labs.com/";
 
@@ -40,4 +41,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAppProvider(App);

@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import getCategories from "../api/getCategories";
-// import Cart from "./Cart";
+import Cart from "./Cart";
+import { useApp } from "../withAppProvider";
 
 function Header() {
+  const { cartItems } = useApp();
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -14,7 +16,7 @@ function Header() {
 
   return (
     <>
-      {/* <Cart /> */}
+      <Cart />
       <header className="header">
         <div
           className="navbar navbar-expand-lg navbar-light bg-light navbar-shadow navbar-sticky"
@@ -34,7 +36,6 @@ function Header() {
               to="/"
               className="navbar-brand flex-shrink-0 order-lg-1 mx-auto ms-lg-0 pe-lg-2 me-lg-4"
             >
-              {/* <p className="m-0 text-primary">Wholiee</p> */}
               <img
                 className="d-none d-lg-block"
                 src="img/logo/logo .png"
@@ -49,7 +50,7 @@ function Header() {
               />
             </NavLink>
 
-            {/* <div className="d-flex align-items-center order-lg-3 ms-lg-auto">
+            <div className="d-flex align-items-center order-lg-3 ms-lg-auto">
               <div className="navbar-tool me-2">
                 <button
                   className="navbar-tool-icon-box border-0 bg-transparent"
@@ -57,10 +58,14 @@ function Header() {
                   data-bs-target="#shoppingCart"
                 >
                   <i className="ai-shopping-cart"></i>
-                  <span className="navbar-tool-badge">3</span>
+                  {cartItems.length > 0 && (
+                    <span className="navbar-tool-badge">
+                      {cartItems.length}
+                    </span>
+                  )}
                 </button>
               </div>
-            </div> */}
+            </div>
             <div
               className="offcanvas offcanvas-collapse order-lg-2"
               id="primaryMenu"
@@ -97,14 +102,6 @@ function Header() {
                     </NavLink>
                   </li>
                   <li className="nav-item dropdown">
-                    {/* <NavLink
-                      to="categories"
-                      className={({ isActive }) =>
-                        isActive ? "nav-link active" : "nav-link"
-                      }
-                    >
-                      Categories
-                    </NavLink> */}
                     <button
                       className="nav-link dropdown-toggle bg-transparent border-0"
                       data-bs-toggle="dropdown"
@@ -113,10 +110,14 @@ function Header() {
                     </button>
                     <ul className="dropdown-menu">
                       {categories.map((category) => (
-                        <li key={category.id}>
-                          <button className="dropdown-item">
+                        <li key={category.id} className="nav-item">
+                          <Link
+                            to={`categories?name=${category.category.toLowerCase()}`}
+                            className="dropdown-item"
+                            replace
+                          >
                             {category.category}
-                          </button>
+                          </Link>
                         </li>
                       ))}
                     </ul>
