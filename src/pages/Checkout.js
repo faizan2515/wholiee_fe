@@ -302,14 +302,14 @@ function Checkout() {
               <button
                 className="btn btn-primary d-block w-100"
                 type="submit"
-                disabled={loading}
+                disabled={loading || cartItems.length === 0}
                 style={{
                   height: 52,
                 }}
               >
                 {loading ? (
-                  <div class="spinner-border" role="status">
-                    <span class="visually-hidden">Loading...</span>
+                  <div className="spinner-border" role="status">
+                    <span className="visually-hidden">Loading...</span>
                   </div>
                 ) : (
                   "Place order"

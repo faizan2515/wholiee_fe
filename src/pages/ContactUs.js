@@ -41,9 +41,9 @@ function ContactUs() {
             style={{ marginTop: "-260px" }}
           >
             <div className="card border-0 shadow-lg">
-              <form className="card-body needs-validation p-5" novalidate>
+              <form className="card-body needs-validation p-5" noValidate>
                 <div className="mb-3 pb-1">
-                  <label className="form-label" for="cont-fn">
+                  <label className="form-label" htmlFor="cont-fn">
                     Full name<sup className="text-danger ms-1">*</sup>
                   </label>
                   <input
@@ -58,7 +58,7 @@ function ContactUs() {
                   </div>
                 </div>
                 <div className="mb-3 pb-1">
-                  <label className="form-label" for="cont-email">
+                  <label className="form-label" htmlFor="cont-email">
                     Email address<sup className="text-danger ms-1">*</sup>
                   </label>
                   <input
@@ -73,7 +73,7 @@ function ContactUs() {
                   </div>
                 </div>
                 <div className="mb-3 pb-1">
-                  <label className="form-label" for="cont-phone">
+                  <label className="form-label" htmlFor="cont-phone">
                     Phone number
                   </label>
                   <input
@@ -87,7 +87,7 @@ function ContactUs() {
                   />
                 </div>
                 <div className="mb-3 pb-1">
-                  <label className="form-label" for="cont-company">
+                  <label className="form-label" htmlFor="cont-company">
                     Company
                   </label>
                   <input
@@ -98,7 +98,7 @@ function ContactUs() {
                   />
                 </div>
                 <div className="mb-3 pb-1">
-                  <label className="form-label" for="cont-subject">
+                  <label className="form-label" htmlFor="cont-subject">
                     Subject<sup className="text-danger ms-1">*</sup>
                   </label>
                   <input
@@ -113,7 +113,7 @@ function ContactUs() {
                   </div>
                 </div>
                 <div className="mb-3 pb-1">
-                  <label className="form-label" for="cont-message">
+                  <label className="form-label" htmlFor="cont-message">
                     Message<sup className="text-danger ms-1">*</sup>
                   </label>
                   <textarea

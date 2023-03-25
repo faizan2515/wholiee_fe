@@ -32,27 +32,27 @@ function AboutUs() {
                 <div className="col-sm-4 px-2 mb-3">
                   <p className="card h-100 card-body py-5 justify-content-center border-0 shadow-lg text-center">
                     <i className="ai-zap text-primary h1 mb-3"></i>
-                    <h3 className="h5 mb-0">Boost</h3>
+                    <span className="h5 mb-0">Boost</span>
                   </p>
                 </div>
                 <div className="col-sm-4 px-2 mb-3">
                   <p className="card card-body py-5 border-0 shadow-lg text-center mb-3">
                     <i className="ai-pie-chart text-danger h1 mb-3"></i>
-                    <h3 className="h5 mb-0">Analize</h3>
+                    <span className="h5 mb-0">Analize</span>
                   </p>
                   <p className="card card-body py-5 border-0 shadow-lg text-center">
                     <i className="ai-refresh-ccw text-info h1 mb-3"></i>
-                    <h3 className="h5 mb-0">Automate</h3>
+                    <span className="h5 mb-0">Automate</span>
                   </p>
                 </div>
                 <div className="col-sm-4 px-2 mb-3">
                   <p className="card card-body py-5 border-0 shadow-lg text-center mb-3">
                     <i className="ai-folder-plus text-success h1 mb-3"></i>
-                    <h3 className="h5 mb-0">Create</h3>
+                    <span className="h5 mb-0">Create</span>
                   </p>
                   <p className="card card-body py-5 border-0 shadow-lg text-center">
                     <i className="ai-share text-warning h1 mb-3"></i>
-                    <h3 className="h5 mb-0">Share</h3>
+                    <span className="h5 mb-0">Share</span>
                   </p>
                 </div>
               </div>
