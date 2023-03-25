@@ -20,6 +20,7 @@ const Categories = () => {
       getCategoryProducts(category)
         .then((response) => {
           setProducts(response.Product);
+          setEmpty("");
           setLoading(false);
         })
         .catch((error) => {
