@@ -23,6 +23,7 @@ const Categories = () => {
           setLoading(false);
         })
         .catch((error) => {
+          setProducts([]);
           setEmpty("No products found");
           setLoading(false);
         });
