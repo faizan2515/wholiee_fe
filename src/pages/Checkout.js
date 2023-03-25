@@ -1,10 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import { useApp } from "../withAppProvider";
+import createOrder from "../api/createOrder";
+import { useNavigate } from "react-router-dom";
 
 function Checkout() {
   const { cartItems, setCartItems } = useApp();
+  const navigate = useNavigate();
+  const [data, setData] = useState({
+    First_name: "",
+    Last_name: "",
+    Email: "",
+    Country: "",
+    City: "",
+    State: "",
+    Address: "",
+    Zipcode: "",
+    Product_ids: "",
+    Total: "",
+  });
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    const productIds = cartItems.map((item) => item.id).join(",");
+    if (productIds) {
+      const newOrder = { ...data };
+      newOrder.Product_ids = productIds;
+      newOrder.Total = cartItems
+        .reduce(
+          (prev, curr) =>
+            prev + parseFloat(curr.Product_Per_Price) * parseInt(curr.quantity),
+          0
+        )
+        .toString();
+      createOrder(newOrder).then((response) => {
+        if (response.status === 200) {
+          setCartItems([]);
+          navigate("/order-confirmation");
+        }
+        setLoading(false);
+      });
+    }
+  };
   return (
-    <form className="sidebar-enabled sidebar-end needs-validation" noValidate>
+    <form className="sidebar-enabled sidebar-end" onSubmit={handleSubmit}>
       <div className="container">
         <div className="row">
           <div className="col-lg-8 content py-4">
@@ -12,130 +56,122 @@ function Checkout() {
             <h2 className="h3 pb-3">Billing details</h2>
             <div className="row mb-4">
               <div className="col-sm-6 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-fn">
+                <label className="form-label" htmlFor="first_name">
                   First name<sup className="text-danger ms-1">*</sup>
                 </label>
                 <input
                   className="form-control"
                   type="text"
-                  id="ch-fn"
+                  id="first_name"
+                  name="First_name"
+                  value={data.First_name}
+                  onChange={handleChange}
                   required
                 />
               </div>
               <div className="col-sm-6 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-ln">
-                  Last names<sup className="text-danger ms-1">*</sup>
+                <label className="form-label" htmlFor="last_name">
+                  Last name<sup className="text-danger ms-1">*</sup>
                 </label>
                 <input
                   className="form-control"
                   type="text"
-                  id="ch-ln"
+                  id="last_name"
+                  name="Last_name"
+                  value={data.Last_name}
+                  onChange={handleChange}
                   required
                 />
               </div>
-              <div className="col-12 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-company">
-                  Company name
-                </label>
-                <input className="form-control" type="text" id="ch-company" />
-              </div>
-              <div className="col-12 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-country">
-                  Country<sup className="text-danger ms-1">*</sup>
-                </label>
-                <select className="form-select" id="ch-country" required>
-                  <option value="" selected disabled hidden>
-                    Choose country
-                  </option>
-                  <option value="Australia">Australia</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Francee">France</option>
-                  <option value="Germany">Germany</option>
-                  <option value="Switzerland">Switzerland</option>
-                  <option value="USA">USA</option>
-                </select>
-              </div>
-              <div className="col-12 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-address">
-                  Street address<sup className="text-danger ms-1">*</sup>
-                </label>
-                <input
-                  className="form-control"
-                  type="text"
-                  id="ch-address"
-                  placeholder="House number and street name"
-                  required
-                />
-              </div>
-              <div className="col-12 mb-3 pb-1">
-                <input
-                  className="form-control"
-                  type="text"
-                  placeholder="Apartment, suite, unit, etc. (optional)"
-                />
-              </div>
-              <div className="col-12 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-city">
-                  Town / City<sup className="text-danger ms-1">*</sup>
-                </label>
-                <input
-                  className="form-control"
-                  type="text"
-                  id="ch-city"
-                  required
-                />
-              </div>
-              <div className="col-12 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-county">
-                  County
-                </label>
-                <input className="form-control" type="text" id="ch-county" />
-              </div>
-              <div className="col-12 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-postcode">
-                  Postcode<sup className="text-danger ms-1">*</sup>
-                </label>
-                <input
-                  className="form-control"
-                  type="text"
-                  id="ch-postcode"
-                  required
-                />
-              </div>
-              <div className="col-sm-6 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-phone">
-                  Phone<sup className="text-danger ms-1">*</sup>
-                </label>
-                <input
-                  className="form-control"
-                  type="text"
-                  id="ch-phone"
-                  required
-                />
-              </div>
-              <div className="col-sm-6 mb-3 pb-1">
-                <label className="form-label" htmlFor="ch-email">
+              <div className="col-sm-12 mb-3 pb-1">
+                <label className="form-label" htmlFor="email">
                   Email address<sup className="text-danger ms-1">*</sup>
                 </label>
                 <input
                   className="form-control"
                   type="email"
-                  id="ch-email"
+                  id="email"
+                  name="Email"
+                  value={data.Email}
+                  onChange={handleChange}
                   required
                 />
               </div>
-            </div>
-            <h2 className="h3 pb-3">Additional information</h2>
-            <div className="mb-3 pb-1 pb-3 pb-lg-5">
-              <label className="form-label" htmlFor="ch-order-notes">
-                Order notes
-              </label>
-              <textarea
-                className="form-control"
-                id="ch-order-notes"
-                rows="5"
-                placeholder="Notes about your order, e.g. special notes for delivery."
-              ></textarea>
+              <div className="col-12 mb-3 pb-1">
+                <label className="form-label" htmlFor="country">
+                  Country<sup className="text-danger ms-1">*</sup>
+                </label>
+                <select
+                  className="form-select"
+                  id="country"
+                  name="Country"
+                  value={data.Country}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="" disabled hidden>
+                    Choose country
+                  </option>
+                  <option value="Pakistan">Pakistan</option>
+                </select>
+              </div>
+              <div className="col-12 mb-3 pb-1">
+                <label className="form-label" htmlFor="city">
+                  Town / City<sup className="text-danger ms-1">*</sup>
+                </label>
+                <input
+                  className="form-control"
+                  type="text"
+                  id="city"
+                  name="City"
+                  value={data.City}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="col-12 mb-3 pb-1">
+                <label className="form-label" htmlFor="state">
+                  State<sup className="text-danger ms-1">*</sup>
+                </label>
+                <input
+                  className="form-control"
+                  type="text"
+                  id="state"
+                  name="State"
+                  value={data.State}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="col-12 mb-3 pb-1">
+                <label className="form-label" htmlFor="address">
+                  Street address<sup className="text-danger ms-1">*</sup>
+                </label>
+                <input
+                  className="form-control"
+                  type="text"
+                  id="address"
+                  placeholder="House number and street name"
+                  name="Address"
+                  value={data.Address}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
+              <div className="col-12 mb-3 pb-1">
+                <label className="form-label" htmlFor="zipcode">
+                  Zipcode<sup className="text-danger ms-1">*</sup>
+                </label>
+                <input
+                  className="form-control"
+                  type="text"
+                  id="zipcode"
+                  name="Zipcode"
+                  value={data.Zipcode}
+                  onChange={handleChange}
+                  required
+                />
+              </div>
             </div>
           </div>
           <div className="col-lg-4 sidebar bg-secondary pt-5 ps-lg-4 pb-md-2">
@@ -263,8 +299,21 @@ function Checkout() {
                   </div>
                 </div>
               </div>
-              <button className="btn btn-primary d-block w-100" type="submit">
-                Place order
+              <button
+                className="btn btn-primary d-block w-100"
+                type="submit"
+                disabled={loading}
+                style={{
+                  height: 52,
+                }}
+              >
+                {loading ? (
+                  <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
+                ) : (
+                  "Place order"
+                )}
               </button>
             </div>
           </div>

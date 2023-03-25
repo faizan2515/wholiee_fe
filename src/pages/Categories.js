@@ -12,14 +12,20 @@ const Categories = () => {
 
   const [loading, setLoading] = useState(false);
   const [products, setProducts] = useState([]);
+  const [empty, setEmpty] = useState("");
 
   useEffect(() => {
     if (category) {
       setLoading(true);
-      getCategoryProducts(category).then((response) => {
-        setProducts(response.Product);
-        setLoading(false);
-      });
+      getCategoryProducts(category)
+        .then((response) => {
+          setProducts(response.Product);
+          setLoading(false);
+        })
+        .catch((error) => {
+          setEmpty("No products found");
+          setLoading(false);
+        });
     } else {
       navigate("/");
     }
@@ -40,6 +46,7 @@ const Categories = () => {
     <Container className="my-5 min-vh-100">
       <h1 className="mb-3">All ({category.toUpperCase()}) Products</h1>
       <Row>
+        <h4>{empty}</h4>
         {products.map((product) => (
           <div
             key={product.id}
