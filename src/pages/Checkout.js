@@ -28,6 +28,9 @@ function Checkout() {
     e.preventDefault();
     setLoading(true);
     const productIds = cartItems.map((item) => item.id).join(",");
+    const suppliersId = [
+      ...new Set(cartItems.map((item) => item.user_id)),
+    ].join(",");
     if (productIds) {
       const newOrder = { ...data };
       newOrder.Product_ids = productIds;
@@ -38,6 +41,8 @@ function Checkout() {
           0
         )
         .toString();
+      newOrder.user_ids = suppliersId;
+      newOrder.status = "incomplete";
       createOrder(newOrder).then((response) => {
         if (response.status === 200) {
           setCartItems([]);
