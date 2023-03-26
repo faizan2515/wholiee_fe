@@ -11,7 +11,7 @@ function OrderConfirmation() {
       <tbody
         style={{
           display: "flex",
-          height: "80vh",
+          height: "100vh",
           flexDirection: "column",
           justifyContent: "center",
           alignItems: "center",
