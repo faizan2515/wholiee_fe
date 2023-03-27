@@ -28,12 +28,14 @@ function Checkout() {
     e.preventDefault();
     setLoading(true);
     const productIds = cartItems.map((item) => item.id).join(",");
+    const productQuantities = cartItems.map((item) => item.quantity).join(",");
     const suppliersId = [
       ...new Set(cartItems.map((item) => item.user_id)),
     ].join(",");
     if (productIds) {
       const newOrder = { ...data };
       newOrder.Product_ids = productIds;
+      newOrder.quantity = productQuantities;
       newOrder.Total = cartItems
         .reduce(
           (prev, curr) =>
@@ -42,7 +44,7 @@ function Checkout() {
         )
         .toString();
       newOrder.user_ids = suppliersId;
-      newOrder.status = "incomplete";
+      newOrder.status = "Pending";
       createOrder(newOrder).then((response) => {
         if (response.status === 200) {
           setCartItems([]);
