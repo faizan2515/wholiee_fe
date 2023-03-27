@@ -49,7 +49,11 @@ function Cart() {
                                 it.id === item.id
                                   ? {
                                       ...it,
-                                      quantity: parseInt(event.target.value),
+                                      quantity:
+                                        parseInt(event.target.value) >=
+                                        parseInt(item.Product_Available_Qty)
+                                          ? parseInt(item.Product_Available_Qty)
+                                          : parseInt(event.target.value),
                                     }
                                   : it
                               )
