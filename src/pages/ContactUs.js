@@ -1,6 +1,40 @@
-import React from "react";
+import React, { useState } from "react";
+import sendEmail from "../api/sendEmail";
 
 function ContactUs() {
+  const [data, setData] = useState({
+    full_name: "",
+    email: "",
+    Message_Content: "",
+    subject: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [response, setResponse] = useState(null);
+
+  const handleChange = (e) => {
+    setData({ ...data, [e.target.name]: e.target.value });
+  };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+    sendEmail(data).then((response) => {
+      if (response.status === 200) {
+        setResponse("success");
+        setData({
+          full_name: "",
+          email: "",
+          Message_Content: "",
+          subject: "",
+        });
+      } else {
+        setResponse("error");
+      }
+      setTimeout(() => {
+        setResponse(null);
+      }, 2000);
+      setLoading(false);
+    });
+  };
   return (
     <>
       <section
@@ -41,60 +75,35 @@ function ContactUs() {
             style={{ marginTop: "-260px" }}
           >
             <div className="card border-0 shadow-lg">
-              <form className="card-body needs-validation p-5" noValidate>
+              <form className="card-body p-5" onSubmit={handleSubmit}>
                 <div className="mb-3 pb-1">
-                  <label className="form-label" htmlFor="cont-fn">
+                  <label className="form-label" htmlFor="contact-fn">
                     Full name<sup className="text-danger ms-1">*</sup>
                   </label>
                   <input
                     className="form-control"
                     type="text"
-                    id="cont-fn"
+                    name="full_name"
+                    id="contact-fn"
+                    value={data.full_name}
+                    onChange={handleChange}
                     placeholder="John Doe"
                     required
                   />
-                  <div className="invalid-feedback">
-                    Please enter your full name!
-                  </div>
                 </div>
                 <div className="mb-3 pb-1">
-                  <label className="form-label" htmlFor="cont-email">
+                  <label className="form-label" htmlFor="contact-email">
                     Email address<sup className="text-danger ms-1">*</sup>
                   </label>
                   <input
                     className="form-control"
                     type="email"
-                    id="cont-email"
+                    name="email"
+                    id="contact-email"
+                    value={data.email}
+                    onChange={handleChange}
                     placeholder="j.doe@example.com"
                     required
-                  />
-                  <div className="invalid-feedback">
-                    Please enter a valid email address!
-                  </div>
-                </div>
-                <div className="mb-3 pb-1">
-                  <label className="form-label" htmlFor="cont-phone">
-                    Phone number
-                  </label>
-                  <input
-                    className="form-control bg-image-0"
-                    type="text"
-                    id="cont-phone"
-                    data-format="custom"
-                    data-delimiter="-"
-                    data-blocks="2 4 2 2"
-                    placeholder="00-0000-00-00"
-                  />
-                </div>
-                <div className="mb-3 pb-1">
-                  <label className="form-label" htmlFor="cont-company">
-                    Company
-                  </label>
-                  <input
-                    className="form-control bg-image-0"
-                    type="text"
-                    id="cont-company"
-                    placeholder="Your company"
                   />
                 </div>
                 <div className="mb-3 pb-1">
@@ -104,13 +113,13 @@ function ContactUs() {
                   <input
                     className="form-control"
                     type="text"
+                    name="subject"
                     id="cont-subject"
+                    value={data.subject}
+                    onChange={handleChange}
                     placeholder="Title of your message"
                     required
                   />
-                  <div className="invalid-feedback">
-                    Please enter a subject!
-                  </div>
                 </div>
                 <div className="mb-3 pb-1">
                   <label className="form-label" htmlFor="cont-message">
@@ -118,18 +127,41 @@ function ContactUs() {
                   </label>
                   <textarea
                     className="form-control"
+                    name="Message_Content"
                     id="cont-message"
+                    value={data.Message_Content}
+                    onChange={handleChange}
                     rows="5"
                     placeholder="Write your message here"
                     required
                   ></textarea>
-                  <div className="invalid-feedback">
-                    Please write a message!
-                  </div>
                 </div>
                 <div className="text-center pt-2">
-                  <button className="btn btn-primary" type="submit">
-                    Send Message
+                  <button
+                    className={`btn ${
+                      response === "success"
+                        ? "btn-success"
+                        : response === "error"
+                        ? "btn-danger"
+                        : "btn-primary"
+                    } d-block w-100`}
+                    type="submit"
+                    disabled={loading}
+                    style={{
+                      height: 52,
+                    }}
+                  >
+                    {loading ? (
+                      <div className="spinner-border" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                      </div>
+                    ) : response === "success" ? (
+                      "Your message has been sent"
+                    ) : response === "error" ? (
+                      "Something went wrong"
+                    ) : (
+                      "Send Message"
+                    )}
                   </button>
                 </div>
               </form>
