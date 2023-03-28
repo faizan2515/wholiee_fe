@@ -13,7 +13,12 @@ function AllAds({ products }) {
             key={product.id}
             className="col-lg-3 col-md-4 col-sm-6 mb-grid-gutter"
           >
-            <div className="card card-product card-hover">
+            <div
+              className="card card-product card-hover"
+              style={{
+                height: 400,
+              }}
+            >
               <button
                 className="card-img-top border-0 bg-transparent"
                 style={{ height: 232 }}
@@ -35,31 +40,41 @@ function AllAds({ products }) {
               </div>
               <div className="card-footer justify-content-center">
                 <div className="d-flex align-items-center">
-                  <button
-                    className="btn-addtocart border-0 bg-transparent"
-                    onClick={() => {
-                      if (cartItems.some((item) => item.id === product.id)) {
-                        setCartItems((cart) =>
-                          cart.map((item) =>
-                            item.id === product.id
-                              ? {
-                                  ...item,
-                                  quantity: item.quantity + 1,
-                                }
-                              : item
-                          )
-                        );
-                      } else {
-                        setCartItems((cart) => [
-                          ...cart,
-                          { ...product, quantity: 1 },
-                        ]);
-                      }
-                    }}
-                  >
-                    <i className="ai-shopping-cart"></i>
-                    <span className="btn-tooltip">To Cart</span>
-                  </button>
+                  {parseInt(product.Product_Available_Qty) === 0 ? (
+                    <span className="text-danger">Out of stock</span>
+                  ) : (
+                    <button
+                      className="btn-addtocart border-0 bg-transparent"
+                      onClick={() => {
+                        if (cartItems.some((item) => item.id === product.id)) {
+                          setCartItems((cart) =>
+                            cart.map((item) =>
+                              item.id === product.id
+                                ? {
+                                    ...item,
+                                    quantity:
+                                      item.quantity >=
+                                      parseInt(product.Product_Available_Qty)
+                                        ? parseInt(
+                                            product.Product_Available_Qty
+                                          )
+                                        : item.quantity + 1,
+                                  }
+                                : item
+                            )
+                          );
+                        } else {
+                          setCartItems((cart) => [
+                            ...cart,
+                            { ...product, quantity: 1 },
+                          ]);
+                        }
+                      }}
+                    >
+                      <i className="ai-shopping-cart"></i>
+                      <span className="btn-tooltip">To Cart</span>
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
