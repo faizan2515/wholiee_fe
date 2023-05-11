@@ -1,18 +1,33 @@
 import { useEffect, useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate, useSearchParams } from "react-router-dom";
 import getCategories from "../api/getCategories";
 import Cart from "./Cart";
 import { useApp } from "../withAppProvider";
 
 function Header() {
   const { cartItems } = useApp();
+  const navigate = useNavigate();
+  const [searchParams] = useSearchParams();
   const [categories, setCategories] = useState([]);
+  const [search, setSearch] = useState("");
 
   useEffect(() => {
     getCategories().then((response) => {
       setCategories(response.data);
     });
   }, []);
+
+  useEffect(() => {
+    if (searchParams.get("query")) {
+      setSearch(searchParams.get("query"));
+    } else {
+      setSearch("");
+    }
+  }, [searchParams]);
+
+  const handleSearchQuery = () => {
+    navigate("/search?query=" + search);
+  };
 
   return (
     <>
@@ -141,6 +156,27 @@ function Header() {
                     >
                       Contact Us
                     </NavLink>
+                  </li>
+                  <li className="nav-item d-flex align-self-center">
+                    <input
+                      className="form-control"
+                      type="search"
+                      placeholder="Search for products..."
+                      value={search}
+                      onChange={(e) => setSearch(e.target.value)}
+                      style={{
+                        borderRadius: "0.75rem 0 0 0.75rem",
+                      }}
+                    />
+                    <button
+                      className="btn btn-primary"
+                      style={{
+                        borderRadius: "0 0.75rem 0.75rem 0",
+                      }}
+                      onClick={handleSearchQuery}
+                    >
+                      Search
+                    </button>
                   </li>
                 </ul>
               </div>

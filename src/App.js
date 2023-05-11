@@ -8,6 +8,7 @@ import {
   Error,
   Checkout,
   OrderConfirmation,
+  Search,
 } from "./pages";
 import Layout from "./components/Layout";
 import axios from "axios";
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home products={products} />} />
           <Route path="all-ads" element={<AllAds products={products} />} />
+          <Route path="search" element={<Search />} />
           <Route path="categories" element={<Categories />} />
           <Route path="checkout" element={<Checkout />} />
           <Route path="order-confirmation" element={<OrderConfirmation />} />
